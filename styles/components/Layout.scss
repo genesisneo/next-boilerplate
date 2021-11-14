@@ -1,0 +1,19 @@
+/* Global */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #fefefe;
+  font: normal normal 400 100%/1.5 Roboto, Helvetica, Arial, sans-serif;
+  color: #010101;
+  scroll-behavior: smooth;
+}
+
+.Layout {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}

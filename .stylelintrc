@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard-scss", "stylelint-config-prettier"],
+  "rules": {
+    "at-rule-semicolon-newline-after": "always",
+    "color-hex-case": "lower",
+    "declaration-block-semicolon-newline-after": "always",
+    "declaration-block-trailing-semicolon": "always",
+    "indentation": 2,
+    "no-extra-semicolons": true,
+    "selector-class-pattern": null
+  }
+}
