@@ -1,6 +1,6 @@
-# NextJs + Typescript + React Redux Boilerplate
+# NextJs + Typescript + Redux Toolkit Boilerplate
 
-A simple and minimum boilerplate as possible for [NextJs](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/) and [React Redux](https://react-redux.js.org/) using [Next Redux Wrapper](https://github.com/kirill-konshin/next-redux-wrapper). This boilerplate is using [SASS](https://sass-lang.com/) as a CSS interpreter, [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/), and [Husky](https://typicode.github.io/husky/). Please note that this boilerplate doesn't have any CSS Frameworks.
+A simple and minimum boilerplate as possible for [NextJs](https://nextjs.org/) with [TypeScript](https://www.typescriptlang.org/) and [Redux Toolkit](https://redux-toolkit.js.org/). This boilerplate is using [SASS](https://sass-lang.com/) as a CSS interpreter, [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), [Prettier](https://prettier.io/), and [Husky](https://typicode.github.io/husky/). You are free to choose your preferred CSS frameworks or utility since this boilerplate doesn't have any.
 
 **Table of Contents:**
 
@@ -13,13 +13,13 @@ A simple and minimum boilerplate as possible for [NextJs](https://nextjs.org/) w
 
 ## Description
 
-This boilerplate is based on `create-next-app@latest --typescript` and follow the [NextJs Redux Wrapper](https://github.com/vercel/next.js/tree/canary/examples/with-redux-wrapper) sample. By default, the boilerplate is designed for [NextJs Server-Side Rendering](https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering) (getServerSideProps) but can easily changed to [NextJs Static Generation](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) (getStaticProps). For linting, instead of using `next lint`, this boilerplate use [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), and [Prettier](https://prettier.io/). Feel free to update the linting rules to your liking. [Husky](https://typicode.github.io/husky/) is added to do linting before committing developers changes. The boilerplate also includes a [Visual Studio Code](https://code.visualstudio.com/) settings and can be found in `.vscode/settings.json`.
+This boilerplate is based on `create-next-app@latest --typescript` and follow the [NextJs Redux](https://github.com/vercel/next.js/tree/canary/examples/with-redux) sample. By default, the boilerplate is designed for [NextJs Server-Side Rendering](https://nextjs.org/docs/app/building-your-application/data-fetching), but can easily changed to [NextJs Client Side](https://nextjs.org/docs/getting-started/react-essentials#the-use-client-directive). For linting, instead of using `next lint`, this boilerplate use [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), and [Prettier](https://prettier.io/). Feel free to update the linting rules to your liking. [Husky](https://typicode.github.io/husky/) is added to do linting before committing developers changes. The boilerplate also includes a [Visual Studio Code](https://code.visualstudio.com/) settings and can be found in `.vscode/settings.json`.
 
 ---
 
 ## Requirement
 
-NodeJs ^14.18.0<br />
+NodeJs ^18.17.0<br />
 https://nodejs.org/en/download/releases/
 
 Visual Studio Code<br />
@@ -49,7 +49,7 @@ https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow
 ## Development
 
 - Download, Fork, or Clone this repo
-- Download and install [node.js ^14.18.0](https://nodejs.org/en/download/releases/). If you need multiple version you can use [nvm](https://github.com/nvm-sh/nvm) for Linux or [nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows
+- Download and install [node.js ^18.17.0](https://nodejs.org/en/download/releases/). If you need multiple version you can use [nvm](https://github.com/nvm-sh/nvm) for Linux or [nvm-windows](https://github.com/coreybutler/nvm-windows) for Windows
 - Open your preferred **_shell_**.<br />
   If your using **_PowerShell_** on Windows as Administrator, you need to execute this command
 
@@ -91,7 +91,7 @@ npm run check:all
 ```
 
 - You can check [http://localhost:3000/](http://localhost:3000/) on your browser.
-- The boilerplate is designed for [NextJs Server-Side Rendering](https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering) (getServerSideProps) but can easily changed to [NextJs Static Generation](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation) (getStaticProps).
+- The boilerplate is designed for [NextJs Server-Side Rendering](https://nextjs.org/docs/app/building-your-application/data-fetching), but can easily changed to [NextJs Client Side](https://nextjs.org/docs/getting-started/react-essentials#the-use-client-directive.
 
 ---
 

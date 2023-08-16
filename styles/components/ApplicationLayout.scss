@@ -6,14 +6,17 @@ body {
   padding: 0;
   width: 100%;
   background-color: #fefefe;
-  font: normal normal 400 100%/1.5 Roboto, Helvetica, Arial, sans-serif;
+  font:
+    normal normal 400 100%/1.5 Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
   color: #010101;
   scroll-behavior: smooth;
 }
 
-.Layout {
+.ApplicationLayout {
   position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  padding: 0.5rem;
+  width: fit-content;
 }

@@ -1,31 +1,25 @@
-import { createStore, applyMiddleware, combineReducers } from "redux";
-import { HYDRATE, createWrapper } from "next-redux-wrapper";
-import { composeWithDevTools } from "redux-devtools-extension";
-import reduxThunk from "redux-thunk";
-import global from "./reducers/global/reducers";
-import user from "./reducers/user/reducers";
+import { configureStore, type ThunkAction, type Action } from "@reduxjs/toolkit";
+import { useSelector as useReduxSelector, useDispatch as useReduxDispatch, type TypedUseSelectorHook } from "react-redux";
+import { middleware } from "./middleware";
+import global from "@/redux/slices/global";
+import users from "@/redux/slices/users";
 
-const bindMiddleware = (middleware: any) =>
-  process.env.NODE_ENV !== "production" ? composeWithDevTools(applyMiddleware(...middleware)) : applyMiddleware(...middleware);
-
-const combinedReducer = combineReducers({
+// store
+const rootReducer = {
   global,
-  user,
+  users,
+};
+export const reduxStore = configureStore({
+  reducer: rootReducer,
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(middleware),
 });
 
-const storeReducer = (state: any, action: any) => {
-  if (action.type === HYDRATE) {
-    const nextState = {
-      ...state,
-      ...action.payload,
-    };
-    return nextState;
-  }
-  return combinedReducer(state, action);
-};
+// hooks
+export const useDispatch = () => useReduxDispatch<ReduxDispatch>();
+export const useSelector: TypedUseSelectorHook<ReduxState> = useReduxSelector;
 
-const initStore = () => createStore(storeReducer, bindMiddleware([reduxThunk]));
-
-export const wrapper = createWrapper(initStore);
-
-export default wrapper;
+// types
+export type ReduxStore = typeof reduxStore;
+export type ReduxState = ReturnType<typeof reduxStore.getState>;
+export type ReduxDispatch = typeof reduxStore.dispatch;
+export type ReduxThunkAction<ReturnType = void> = ThunkAction<ReturnType, ReduxState, unknown, Action>;

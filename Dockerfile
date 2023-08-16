@@ -1,4 +1,4 @@
-FROM node:14.18-alpine AS builder
+FROM node:18.17-alpine AS builder
 LABEL maintainer="genesis"
 
 RUN apk update
@@ -23,7 +23,7 @@ COPY . .
 RUN yarn run build
 RUN rm -rf /app/.git
 
-FROM node:14.18-alpine
+FROM node:18.17-alpine
 WORKDIR /app
 COPY --from=builder /app .
 EXPOSE 3000
