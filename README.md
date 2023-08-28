@@ -13,7 +13,7 @@ A simple and minimum boilerplate as possible for [NextJs](https://nextjs.org/) w
 
 ## Description
 
-This boilerplate is based on `create-next-app@latest --typescript` and follow the [NextJs Redux](https://github.com/vercel/next.js/tree/canary/examples/with-redux) sample. By default, the boilerplate is designed for [NextJs Server-Side Rendering](https://nextjs.org/docs/app/building-your-application/data-fetching), but can easily changed to [NextJs Client Side](https://nextjs.org/docs/getting-started/react-essentials#the-use-client-directive). For linting, instead of using `next lint`, this boilerplate use [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), and [Prettier](https://prettier.io/). Feel free to update the linting rules to your liking. [Husky](https://typicode.github.io/husky/) is added to do linting before committing developers changes. The boilerplate also includes a [Visual Studio Code](https://code.visualstudio.com/) settings and can be found in `.vscode/settings.json`.
+This boilerplate is based on `create-next-app@latest --typescript` and follow the [NextJs Redux](https://github.com/vercel/next.js/tree/canary/examples/with-redux) sample. By default, the boilerplate is designed for [NextJs Server-Side Rendering (SSR)](https://nextjs.org/docs/app/building-your-application/data-fetching), but can easily changed to [NextJs Client-Side (CSR)](https://nextjs.org/docs/getting-started/react-essentials#the-use-client-directive). For linting, instead of using `next lint`, this boilerplate use [ESLint](https://eslint.org/), [Stylelint](https://stylelint.io/), and [Prettier](https://prettier.io/). Feel free to update the linting rules to your liking. [Husky](https://typicode.github.io/husky/) is added to do linting before committing developers changes. The boilerplate also includes a [Visual Studio Code](https://code.visualstudio.com/) settings and can be found in `.vscode/settings.json`.
 
 ---
 
@@ -25,7 +25,7 @@ https://nodejs.org/en/download/releases/
 Visual Studio Code<br />
 https://code.visualstudio.com/
 
-### Required Expensions
+### Required Extensions
 
 ESLint<br />
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
